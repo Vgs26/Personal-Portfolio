@@ -30,7 +30,7 @@ body {
     
 }
 .header-text{
-    margin: 30px;
+    margin: 20px;
     padding: 30px;
 }
 
@@ -39,14 +39,9 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url('images/mypic1.png');
-    background-size: 30%;
+    background-size: 40%;
     background-repeat: no-repeat;
     background-position: bottom right;
-}
-
-.logo{
-    width: 200px;
-    margin-left: 20px;
 }
 nav{
     position: fixed;
@@ -58,12 +53,13 @@ nav{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 nav ul li{
     display:inline-block;
     list-style:none;
-    margin:10px 20px;
+    margin:10px 15px;
 }
 nav ul li a{
     
@@ -82,10 +78,9 @@ nav ul li a::after{
     left:0;
     bottom: -6px;
     transition: 0.5s;
-    ;
 }
 nav ul li a:hover::after{
-    width: 100%;
+    width: 70%;
 }
 .header-text{
     margin-top: 20%;
@@ -132,7 +127,7 @@ nav ul li a:hover::after{
     margin:20px 0;
 }
 .tab-links{
-    margin-right: 50px;
+    margin-right: 10px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
@@ -273,7 +268,7 @@ nav ul li a:hover::after{
 }
 /*-------------------contact-------------------*/
 .contact{
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .contact-left{
@@ -284,6 +279,7 @@ nav ul li a:hover::after{
 }
 .contact-right{
     margin-top: 120px;
+    margin-right: 20px;
     flex-basis: 60%;
 }
 .contact-left p{
@@ -375,13 +371,22 @@ nav .fas{
     
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:1000px){
+    html {
+        zoom: 1;
+      }
     #header{
+        width: 100%;
+        height: 100vh;
         background-image: url('images/myPicPhoneView1.png');
+        background-size: 90%;
+        background-position: bottom right;
+        margin-right: -100%;
+        background-repeat: no-repeat;
 
     }
     .header-text{
-        margin-top: 60%;
+        margin-top: 20%;
         font-size: 16px;
     }
     .header-text h1{
@@ -401,6 +406,7 @@ nav .fas{
         top: 0;
         left: -170px;
         width: 170px;
+        bottom: 100%;
         height: 100vh;
         padding-top: 50px;
         text-align:left;
@@ -431,16 +437,24 @@ nav .fas{
         left:25px;
     }
     .sub-title{
-        font-size: 40px;
+        font-size: 35px;
+        
     }
     .about-col-1,.about-col-2{
-        flex-basis: 60%;
+        flex-basis: 100%;
+        margin: -35px -35px;
+        padding: -35px -35px;
     }
     .about-col-1{
-        margin-bottom: 15px;
+        margin-top: -40px;
+        margin-bottom: -15px;
     }
     .about-col-2{
-        font-size: 14px;
+        margin-left: -30px;
+        font-size: 16px;
+    }
+    .contact{
+        margin-top: 10px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
@@ -452,9 +466,23 @@ nav .fas{
     .contact-right{
         margin: 40px;
     }
+    #mail{
+        font-size: 18px;
+    }
+    .portfoliowala{
+        margin-left: -30px;
+    }
+    #pro{
+	width: 10%;
+	height: 15%;
+    }
     .pf #cp{
-        font-size: 40px;
+        font-size: 35px;
         margin-left: 60px;
+        margin-bottom: 10px;
+    }
+    .serviceswala{
+        margin-top:-50px ;
     }
 
 }

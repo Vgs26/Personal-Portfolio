@@ -20,7 +20,7 @@
             icon.src="images/moon.png";
         }
         else{
-            icon.src="sun.png";
+            icon.src="images/sun.png";
         }
     }
 //-----------small screen sidemenu
